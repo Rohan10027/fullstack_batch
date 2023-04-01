@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <style>
+        ul.kind1 li {/*<-- select every children of ul not just recent one
+            no matter how deep it is nested-->*/ 
+            color: purple
+        }
+        
+        /* for selecting direct children of ul use*/
+        ul.kind1>li{
+            color: brown;
+            background: black;
+        }
+        .kind2 li {
+            color: blue
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="kind1">
+        <h2>This is heading 2</h2>
+        <li>Kind 1</li>
+        <div>
+            <li>help you</li>
+            <li>this is my 9th session</li>
+        </div>
+        <li>Kind 1</li>
+        <div>
+            <li>help you</li>
+            <li>this is my 9th session</li>
+        </div>
+    </ul>
+
+
+    <ul class="kind2">
+        <li>Kind 2</li>
+        <li>Kind 2</li>
+    </ul>
+
+    <div class="kind1">
+        <li>somethign</li>
+        <li>somethign</li>
+        <li>somethign</li>
+        <li>somethign</li>
+    </div>
+    <!-- <ul>
+        <h2 id="id1">Kind 1</h2>
+        <li class="group1">Kind 1</li>
+        <li class="group1">Kind 1</li>
+        <li class="group1">Kind 1</li>
+    </ul> -->
+
+    <!-- <ul>
+        <li>Kind 2</li>
+        <li>Kind 2</li>
+        <li>Kind 3</li>
+    </ul>
+
+    <ul>
+        <li>Kind 3</li>
+        <li>Kind 3</li>
+        <li>Kind 3</li>
+    </ul> -->
+
+
+    <!-- <ul>
+        <li >Kind 1</li>
+        <li class="kind1">Kind 1</li>
+        <li class="kind1">Kind 1</li>
+    </ul>
+
+    <ul>
+        <li class="kind2">Kind 2</li>
+        <li class="kind2">Kind 2</li>
+        <li class="kind2">Kind 3</li>
+    </ul>
+
+    <ul>
+        <li class="kind3">Kind 3</li>
+        <li class="kind3">Kind 3</li>
+        <li class="kind3">Kind 3</li>
+    </ul> -->
+
+</body>
+
+
+</html>

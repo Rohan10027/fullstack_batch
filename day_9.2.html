@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline CSS</title>
+    <style>
+        h1{
+            color: red;
+            font-size: 50px;
+        }
+        .group1{
+            color: blue !important;
+        }
+        .group2{
+            color: violet;
+        }
+        .sm-text{
+            font-size: 5px;
+        }
+        .md-text{
+            font-size: 10px;
+        }
+        .lg-text{
+            font-size: 15px;
+        }
+        h2{
+            color: purple;
+            font-size: 40px;
+        }
+        h3{
+            color: greenyellow;
+            font-size: 30px;
+        }
+        .class-1{
+            background: orange;
+        }
+        .class-2{
+            background: blue;
+            font-size: 50px;
+        }
+        #unique{
+            background: purple;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- id priority greateter than class -->
+    <h1>
+        !important > inline styles > ID selectors > Class Selectors > element selectors
+    </h1>
+    <h1>Hello CSS</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <div style="color:green" class="group1 group2" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus maiores, architecto vero blanditiis harum repellat exercitationem nam obcaecati vel saepe illo itaque temporibus quibusdam excepturi qui sapiente eius officia doloribus.</div>
+    <div>
+        <h1 class="group1">hello class</h1>
+        <h1 class="group1 sm-text">hello class</h1>
+        <h1 class="group1">hello class</h1>
+    </div>
+    <div>
+        <h1 class="group2">hello class</h1>
+        <h1 class="group2">hello class</h1>
+        <h1 class="group2">hello class</h1>
+    </div>
+    <div>
+        <h2 class="class-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minima omnis accusamus facilis facere, sint tempore, tempora corrupti dolore nobis sequi? Amet, velit eum! Fuga nobis id officiis reiciendis? Itaque.</h2>
+        <h2 id="unique" class="class-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minima omnis accusamus facilis facere, sint tempore, tempora corrupti dolore nobis sequi? Amet, velit eum! Fuga nobis id officiis reiciendis? Itaque.</h2>
+        <h2 class="class-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minima omnis accusamus facilis facere, sint tempore, tempora corrupti dolore nobis sequi? Amet, velit eum! Fuga nobis id officiis reiciendis? Itaque.</h2>
+        <h2 class="class-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minima omnis accusamus facilis facere, sint tempore, tempora corrupti dolore nobis sequi? Amet, velit eum! Fuga nobis id officiis reiciendis? Itaque.</h2>
+    </div>
+</body>
+</html>

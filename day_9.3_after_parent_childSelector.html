@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul>li {
+            color: green;
+        }
+        ul>li:first-child{
+            color: aqua;
+        }
+        ul>li:last-child{
+            color: brown;
+        }
+        ul>li:nth-child(3){
+            color: yellow;
+            background: darkblue;
+        }
+        div{
+            background: rgb(238, 25, 25);
+            background: url("https://www.w3schools.com/css/img_fjords.jpg");
+            height: 300px;
+            width: 300px;
+            cursor: pointer;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        /* pseudo selector */
+        div:hover{
+            /* background: url("https://www.w3schools.com/css/img_fjords.jpg"); */
+            /* height: 200px;
+            width: 200px; */
+            /* cursor:progress; */
+        }
+        input:focus{
+            background-color: orange;
+        }
+        /* for paragraph selection property as a highlight */
+        p::selection{
+            background-color: darkblue;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <input type="text">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusantium aspernatur aliquid laboriosam pariatur ea voluptatum assumenda necessitatibus, impedit quia illo ipsa ipsum dicta minus nesciunt commodi ducimus nobis adipisci.</p>
+    <!-- <ul>
+        <li>first element</li>
+        <li>second element</li>
+        <li>third element</li>
+        <li>fourth element</li>
+    </ul> -->
+</body>
+</html>
