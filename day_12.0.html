@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.parent{
+            background-color: black;
+            height: 600px;
+            width: 700px;
+            padding: 2px;
+            display: flex;
+            justify-content: center;
+            /* it will align items at center of primary axis only */
+            /* it can be at the end by using als for start for start */
+            /* justify-content: end; */
+            flex-wrap: wrap;
+            /* wrap means if your element doesn't fit then wrap */
+
+            align-items: center;
+            /* so if align an elements in non primary axis i.e. not in x nor y */
+            /* ye bilkul hi center of the page par align kar dega */
+        }
+        div.child{
+            background-color: yellow;
+            height: 250px;
+            width: 150px;
+            border-color: 2px solid red;
+            margin:0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <!-- <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div> -->
+        <!-- as multiple child div are present then size of box will get shrinked -->
+    </div>
+</body>
+</html>

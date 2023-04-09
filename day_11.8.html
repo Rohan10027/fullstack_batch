@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <!-- flex is a inline block element -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* height and width only works on bllock element not inline element */
+        span{
+            height: 200px;
+            width: 200px;
+            background-color: orange;
+            display: block;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: purple;
+            display: inline;
+        }
+        /* here I have to reverse the property changing div to span and vice versa */
+
+    </style>
+</head>
+<body>
+    <span></span>
+    <div></div>
+</body>
+</html>
